@@ -16,6 +16,55 @@
         android:id="@+id/sideMenu"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:headerLayout="@layout/nav_header_main"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/nav_header_main" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/menuRV"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/menu_list_item" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/logoutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_login"
+                    android:background="?selectableItemBackground"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/orange"
+                    app:iconTint="@color/orange"
+                    android:textAllCaps="false"
+                    android:stateListAnimator="@null"
+                    android:text="Logout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/langBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/orange"
+                    android:stateListAnimator="@null"
+                    android:text="العربية"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>

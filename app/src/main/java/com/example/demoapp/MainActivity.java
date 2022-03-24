@@ -7,18 +7,30 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
 
+import com.example.demoapp.adaptors.MenuAdaptor;
+import com.example.demoapp.models.MyMenuItem;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.shape.CornerFamily;
 import com.google.android.material.shape.MaterialShapeDrawable;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     NavController navController;
     AppBarConfiguration appBarConfiguration;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    RecyclerView menuRecyclerView;
+    MenuAdaptor adaptor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
                         .setTopRightCorner(CornerFamily.ROUNDED,30)
                         .setBottomRightCorner(CornerFamily.ROUNDED,30)
                         .build());
+
+        menuRecyclerView = findViewById(R.id.menuRV);
+        adaptor = new MenuAdaptor(MyMenuItem.menuItemList, this);
+        DividerItemDecoration decoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
+        menuRecyclerView.addItemDecoration(decoration);
+        menuRecyclerView.setAdapter(adaptor);
+
     }
 
     @Override

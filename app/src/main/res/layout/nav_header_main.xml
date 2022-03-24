@@ -25,7 +25,7 @@
       app:layout_constraintBottom_toBottomOf="@id/thumb"
       app:layout_constraintStart_toEndOf="@id/thumb"
       app:layout_constraintEnd_toEndOf="parent"
-       android:textSize="20sp"
+       android:textSize="18sp"
        android:textStyle="bold"
        android:textColor="@color/orange"
        android:layout_marginStart="16dp"
@@ -38,7 +38,7 @@
        android:layout_height="wrap_content"
        app:layout_constraintTop_toBottomOf="@id/thumb"
        app:layout_constraintStart_toStartOf="parent"
-       android:textSize="20sp"
+       android:textSize="18sp"
        android:textStyle="bold"
        android:layout_marginTop="30dp"
        android:textColor="@color/white"
@@ -51,7 +51,7 @@
        app:layout_constraintTop_toBottomOf="@id/tillCode"
        app:layout_constraintStart_toStartOf="parent"
        android:layout_marginTop="3dp"
-       android:textSize="13sp"
+       android:textSize="12sp"
        android:textColor="#ADFFFFFF"
        android:text="You can share this number with others to send you money" />
 

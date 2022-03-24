@@ -13,6 +13,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/montserrat_medium</item>
     </style>
 
     <style name="Theme.DemoApp.NoActionBar">
@@ -24,15 +25,6 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
     <!--    APPLY THE EXPO FONT TO WIDGETS-->
-
-<!--    <style name="ExpoTextViewStyle" parent="android:Widget.TextView">-->
-<!--        <item name="android:fontFamily">@font/expo_arabic_light</item>-->
-
-<!--    </style>-->
-
-<!--    <style name="ExpoButtonStyle" parent="android:Widget.Holo.Button">-->
-<!--        <item name="android:fontFamily">@font/expo_arabic_light</item>-->
-<!--    </style>-->
 
     <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:layout_gravity">center</item>

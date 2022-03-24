@@ -1,7 +1,5 @@
 package com.example.demoapp.models;
 
-import android.graphics.drawable.Drawable;
-
 import com.example.demoapp.R;
 
 import java.util.Arrays;

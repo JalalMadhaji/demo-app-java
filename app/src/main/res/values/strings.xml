@@ -2,4 +2,18 @@
     <string name="app_name">Demo App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="placeholder">Main Page</string>
+    <string name="logout">Logout</string>
+    <string name="arabic">العربية</string>
+    <string name="success">Success</string>
+    <string name="float_moved_successfully">Float moved successfully</string>
+    <string name="amount_value">8,500 YER</string>
+    <string name="to">To</string>
+    <string name="store_one">Store One</string>
+    <string name="transfer_details">Transfer details</string>
+    <string name="amount">Amount</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="transaction_id_value">87125586</string>
+    <string name="download">Download</string>
+    <string name="share">Share</string>
+    <string name="finish">Finish</string>
 </resources>

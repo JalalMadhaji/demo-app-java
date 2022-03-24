@@ -11,6 +11,8 @@ import androidx.navigation.ui.NavigationUI;
 import android.os.Bundle;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.shape.CornerFamily;
+import com.google.android.material.shape.MaterialShapeDrawable;
 
 public class MainActivity extends AppCompatActivity {
     NavController navController;
@@ -31,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        MaterialShapeDrawable navViewBackground = (MaterialShapeDrawable) navigationView.getBackground();
+        navViewBackground.setShapeAppearanceModel(
+                navViewBackground.getShapeAppearanceModel()
+                        .toBuilder()
+                        .setTopRightCorner(CornerFamily.ROUNDED,30)
+                        .setBottomRightCorner(CornerFamily.ROUNDED,30)
+                        .build());
     }
 
     @Override

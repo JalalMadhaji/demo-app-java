@@ -27,7 +27,7 @@
       app:layout_constraintEnd_toEndOf="parent"
        android:textSize="20sp"
        android:textStyle="bold"
-       android:textColor="@color/white"
+       android:textColor="@color/orange"
        android:layout_marginStart="16dp"
       android:text="Hello Muhammed!" />
 

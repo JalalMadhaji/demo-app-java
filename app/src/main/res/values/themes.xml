@@ -1,7 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.DemoApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.DemoApp" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
+        <item name="windowActionBar">false</item>
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -12,5 +13,28 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.DemoApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+    <!--    APPLY THE EXPO FONT TO WIDGETS-->
+
+<!--    <style name="ExpoTextViewStyle" parent="android:Widget.TextView">-->
+<!--        <item name="android:fontFamily">@font/expo_arabic_light</item>-->
+
+<!--    </style>-->
+
+<!--    <style name="ExpoButtonStyle" parent="android:Widget.Holo.Button">-->
+<!--        <item name="android:fontFamily">@font/expo_arabic_light</item>-->
+<!--    </style>-->
+
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:layout_gravity">center</item>
     </style>
 </resources>
